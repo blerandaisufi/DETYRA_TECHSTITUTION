@@ -1,0 +1,118 @@
+<% include partials/header %>
+
+<div class="custom-container container">
+			<h1 style="color:	#428bca;padding-top: 40px;">Shto kontraten e re</h1>
+			<!-- Prokurimi -->
+			<h3 class="distanca">Prokurimi</h3>
+			<form method="POST" action="/todos/add">
+			<div class="row distanca-1">
+				<div class="col-md-6 ">
+					<label for="">Nr. rendor i prokurimit</label>
+					<br>
+					<input class="form-control" type="number" name="number" placeholder="Nr.rendor i prokurimit">
+				</div>
+				<div class="col-md-6">
+					<label for="">Lloji i prokurimit</label>
+					<br>
+					<input class="form-control" type="text" name="description" placeholder="Lloji i prokurimit">
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label for="">Aktiviteti i prokurimit</label>
+					<br>
+					<input class="form-control" type="text" name="title" placeholder="Aktiviteti i prokurimit">
+				</div>
+			</div>
+
+			<!-- Datat -->
+			
+			<h3 class="distanca">Datat</h3>
+			<form>
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<label for="">Data e inicimit t&#235; aktivitetit<br>t&#235; prokurimit</label>
+					<br>
+					<input class="form-control" type="date" placeholder="03.03.2018">
+				</div>
+				<div class="col-md-6">
+					<label for="">Data e publikimit <br> t&#235; shpalljes</label>
+					<br>
+					<input class="form-control" type="date" name="date" placeholder="03.03.2018">
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<label for="">Data e n&#235;nshkrimit t&#235; kontrat&#235;s</label>
+					<br>
+					<input class="form-control" type="date" placeholder="03.03.2018">
+				</div>
+			</div>
+
+			<div class="row distanca-1">
+				<div class="col-md-12">
+				<label for="">Afatet per implementimin e kontrat&#235;s</label>
+				</div>
+				<div class="col-md-6">
+					<input class="form-control" type="date" placeholder="03.03.2018">
+				</div>
+				<div class="col-md-6">
+					<input class="form-control" type="date" placeholder="03.03.2018">
+				</div>
+			</div>
+				<div class="row distanca-1">
+				<div class="col-md-12">
+				<label for="">Data e permbylljes s&#235; kontrat&#235;s(data e pranimit<br>
+							  t&#235; p&#235;rkohsh&#235;m / preliminar)
+				</label>
+				</div>
+				<div class="col-md-12">
+					<input class="form-control" type="date" placeholder="03.03.2018">
+				</div>
+			</div>
+
+
+			<!-- Cmimi dhe te dhenat e tjera -->
+
+			<h3 class="distanca">&#199;mimi dhe t&#235; dh&#235;nat tjera:</h3>
+			<form>
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<label for="">&#199;mimi i kontrat&#235;s(duke p&#235;rfshir&#235;<br>
+								  t&#235; gjitha taksat)
+					</label>
+					<br>
+					<input class="form-control" type="number" placeholder="Cmimi total">
+				</div>
+				<div class="col-md-6">
+					<label for="">&#199;mimi total i paguar<br>p&#235;r kontrat&#235;n</label>
+					<br>
+					<input class="form-control" type="number" placeholder="Cmimi i kontrates">
+					<br>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-12">
+					<label for="">Emri i t&#235; cilit i &#235;sht&#235; dh&#235;n&#235; kontrata</label>
+					<br>
+					<input class="form-control" type="text" placeholder="Emri dhe mbiemri">
+				</div>
+			</div>
+			<br>
+			<!-- Buttons -->
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<button class="btn btn-block" style="color:white;background-color:#428bca;" type="submit">D&#203;RGO</button>
+				</div>
+				<div class="col-md-6">
+					<button class="btn btn-block btn-secondary">FSHIJ</button>
+				</div>
+			</div>
+		</form>
+		</div>
+
+
+<% include partials/footer %>
